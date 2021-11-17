@@ -1,0 +1,20 @@
+@import './variables';
+
+@mixin content {
+    width: $global_content_width_s;
+    max-width: $global_content_width_max;
+    margin: $global_content_indent_s auto 0;
+
+    @media (min-width: $media_s) {
+        width: $global_content_width_m;
+        margin-top: $global_content_indent_m;
+    }
+}
+
+@mixin heading {
+    font-size: $heading_size_s;
+
+    @media (min-width: $media_s) {
+        font-size: $heading_size_m;
+    }
+}

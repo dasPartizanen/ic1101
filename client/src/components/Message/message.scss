@@ -1,0 +1,26 @@
+.message {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  background-color: #E9EDEF;
+  color: #4D585F;
+  padding: 10px 20px;
+  border-radius: 4px;
+  animation: 3s ease-in-out show-message;
+}
+
+@keyframes show-message {
+  0% {
+    transform: translate(-50%, -100%);
+  }
+  10% {
+    transform: translate(-50%, 15px);
+  }
+  90% {
+    transform: translate(-50%, 15px);
+  }
+  100% {
+    transform: translate(-50%, -100%);
+  }
+}

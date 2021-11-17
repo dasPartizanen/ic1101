@@ -1,0 +1,120 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+article,
+aside,
+audio,
+canvas,
+datalist,
+details,
+embed,
+figcaption,
+figure,
+footer,
+header,
+keygen,
+menu,
+nav,
+output,
+progress,
+section,
+source,
+video {
+    display: block;
+    margin: 0;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+/* remember to define focus styles! */
+:focus {
+    outline: 0;
+}
+/* remember to highlight inserts somehow! */
+ins {
+    text-decoration: none;
+}
+del {
+    text-decoration: line-through;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+td {
+    vertical-align: top;
+}
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner,
+input[type="file"] > input[type="button"]::-moz-focus-inner {
+    /*ff fix*/
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+input, textarea {
+    font-family: Arial, "Helvetica CY", Helvetica, sans-serif;
+
+    &:-moz-placeholder {
+        color: #4d4d4d;
+        font-weight: normal;
+    }
+    &::-moz-placeholder {
+        color: #4d4d4d;
+        font-weight: normal;
+    }
+    &::-webkit-input-placeholder {
+        color: #767676;
+        display: inline-block;
+        padding-top: 2px;
+        font-weight: normal;
+    }
+}
+::-ms-clear {
+    display: none;
+}
+input:-webkit-autofill {
+    color: #000 !important;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
+}

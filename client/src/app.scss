@@ -1,0 +1,21 @@
+@import './styles/variables';
+
+$app_background-color: #121a22;
+
+.app {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: $app_background-color;
+    font: 14px/1.2 'Roboto', sans-serif;
+    color: #ced6d5;
+
+    &__navPlace {
+        padding-top: $navigation_height;
+        box-sizing: border-box;
+    }
+    &_loader {
+        width: 100vw;
+        height: 100vh;
+        background-color: $app_background-color;
+    }
+}

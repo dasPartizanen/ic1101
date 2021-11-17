@@ -1,0 +1,5 @@
+{
+  "port": 1488,
+  "jwtSecret": "dver",
+  "mongoUri": "mongodb+srv://admin:111MONGO111@cluster0.xezfo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+}

@@ -1,0 +1,24 @@
+@import '../../styles/mixins';
+
+$addNote_indent_top: 14px;
+
+.addNote {
+    @include content;
+
+    &_heading {
+        @include heading;
+    }
+    &_form {
+        margin-top: $addNote_indent_top * 2;
+    }
+    &_field {
+        margin-top: $addNote_indent_top;
+
+        &__text {
+            height: 200px;
+        }
+    }
+    &_button {
+        margin-top: $addNote_indent_top * 2;
+    }
+}

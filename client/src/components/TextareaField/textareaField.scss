@@ -1,0 +1,8 @@
+.textareaField {
+    display: flex;
+    flex-direction: column;
+
+    &_textarea {
+        flex: 1 1 auto;
+    }
+}

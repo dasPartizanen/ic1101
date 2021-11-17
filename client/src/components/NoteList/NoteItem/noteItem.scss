@@ -1,0 +1,66 @@
+.noteItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+
+    &:first-child {
+        margin-top: 0;
+    }
+    &_link {
+        flex: 1 1 auto;
+        display: block;
+        padding: 10px 20px;
+        background-color: rgba(255, 255, 255, 0.01);
+        border: 1px rgba(255, 255, 255, 0.02) solid;
+        transition: background-color .35s ease-in-out,
+        border-color .35s ease-in-out;
+        text-decoration: none;
+        color: #ced6d5;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.02);
+            border-color: rgba(255, 255, 255, 0.04);
+        }
+    }
+    &_heading {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    &_date {
+        display: block;
+        font-size: 12px;
+        margin-top: 4px;
+        opacity: .6;
+    }
+    &_dell {
+        background: none;
+        border: none;
+        width: 20px;
+        height: 20px;
+        position: relative;
+        opacity: .1;
+        margin-left: 10px;
+        transition: opacity .35s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            opacity: .5;
+        }
+
+        &:before, &:after {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            content: '';
+            width: 2px;
+            background-color: #fff;
+        }
+        &:before {
+            transform: rotate(45deg);
+        }
+        &:after {
+            transform: rotate(-45deg);
+        }
+    }
+}

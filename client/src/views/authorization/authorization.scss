@@ -1,0 +1,34 @@
+@import '../../styles/mixins';
+
+$login_indent_top: 14px;
+
+.authorization {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &_body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-width: 230px;
+    }
+    &_heading {
+        @include heading;
+    }
+    &_form {
+        width: 100%;
+    }
+    &_field {
+        margin-top: $login_indent_top;
+    }
+    &_button {
+        min-width: 100%;
+        margin-top: $login_indent_top * 2;
+    }
+    &_link {
+        margin-top: 14px;
+    }
+}

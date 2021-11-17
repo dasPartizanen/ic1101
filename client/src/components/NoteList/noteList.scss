@@ -1,0 +1,22 @@
+@import '../../styles/variables';
+@import '../../styles/mixins';
+
+.noteList {
+    width: $global_content_width_s;
+    max-width: $global_content_width_max;
+    margin: 0 auto;
+    padding: $global_content_indent_s 0;
+
+    @media (min-width: $media_s) {
+        width: $global_content_width_m;
+        padding-top: $global_content_indent_m;
+        padding-bottom: $global_content_indent_m;
+    }
+
+    &_heading {
+        @include heading;
+    }
+    &_content {
+        margin-top: 25px;
+    }
+}

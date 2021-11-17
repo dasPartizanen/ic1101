@@ -1,0 +1,17 @@
+.input {
+    padding: 8px 9px;
+    border: none;
+    border-radius: 4px;
+    background-color: #E9EDEF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #4D585F;
+    box-sizing: border-box;
+    transition: background-color .35s ease-in-out,
+    box-shadow .35s ease-in-out;
+
+    &:focus {
+         box-shadow: 0 0 10px #121A22;
+         background-color: #fff;
+    }
+}

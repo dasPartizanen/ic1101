@@ -1,0 +1,14 @@
+@import '../../styles/mixins';
+
+.note {
+    @include content;
+
+    &_heading {
+        @include heading;
+    }
+    &_text {
+        font-size: 18px;
+        line-height: 1.3;
+        margin-top: 25px;
+    }
+}

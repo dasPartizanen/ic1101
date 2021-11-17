@@ -1,0 +1,30 @@
+.button {
+    border: none;
+    cursor: pointer;
+    font: 14px/1.2 'Roboto', sans-serif;
+    background-color: #E1630E;
+    border-radius: 4px;
+    padding: 9px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    box-sizing: border-box;
+    transition: background-color .2s ease-out,
+    opacity .2s ease-out;
+
+    &:hover {
+        background-color: #E69740;
+    }
+    &_disabled {
+        opacity: .5;
+        cursor: default;
+
+        &:hover {
+            background-color: #E1630E;
+        }
+    }
+}
